@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#7d7d7d</color>
+    <color name="colorAccent">#bdbdbd</color>
+    <color name="darkBackground">#070b19</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#bdbdbd</color>
+    <color name="switch_gray">#7d7d7d</color>
+
+
+    <color name="primaryColor">#ffffff</color>
+    <color name="primaryLightColor">#bdbdbd</color>
+    <color name="primaryDarkColor">#002884</color>
+    <color name="primaryTextColor">#000000</color>
+
+    <color name="background_hot">#f44336</color>
+    <color name="background_cold">#3f51b5</color>
+</resources>
