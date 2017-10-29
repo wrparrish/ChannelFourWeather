@@ -5,6 +5,7 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [Channel Four Weather](#channel-four-weather)
+  - [Project Quality](#project-quality)
   - [Project Organization](#project-organization)
     - [Android - Android Application Module](#android---android-application-module)
       - [Redux](#redux)
@@ -18,6 +19,9 @@
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 # Channel Four Weather
+
+## Project Quality
+Channel Four Weather is evaluated by a static analysis / style tool called CodeBeat. The projects  score is available [here](https://codebeat.co/projects/github-com-wrparrish-channelfourweather-master)
 
 
 ## Project Organization
