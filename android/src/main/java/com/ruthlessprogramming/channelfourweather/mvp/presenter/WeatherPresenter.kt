@@ -1,6 +1,5 @@
 package com.ruthlessprogramming.channelfourweather.mvp.presenter
 
-import android.util.Log
 import com.hannesdorfmann.mosby3.mvp.MvpBasePresenter
 import com.ruthlessprogramming.businesslogic.usecase.GetWeather
 import com.ruthlessprogramming.channelfourweather.mvp.model.WeatherModel
@@ -12,7 +11,7 @@ import redux.api.Store
 
 class WeatherPresenter(private val model: WeatherModel,
                        private val getWeather: GetWeather) : MvpBasePresenter<WeatherView>(), Store.Subscriber {
-    var subscription: Store.Subscription? = null
+    private var subscription: Store.Subscription? = null
 
     override fun onStateChanged() {
         view?.renderState(model.state)

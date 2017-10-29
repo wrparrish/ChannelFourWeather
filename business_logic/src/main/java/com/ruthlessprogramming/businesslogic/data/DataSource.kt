@@ -2,10 +2,6 @@ package com.ruthlessprogramming.businesslogic.data
 
 import io.reactivex.Observable
 
-/**
- * Created by billyparrish on 10/28/17.
- */
-
 interface DataSource<in K, V> {
 
     fun getAll(): Observable<List<V>>

@@ -10,22 +10,16 @@ import com.airbnb.epoxy.SimpleEpoxyController;
 
 import java.util.List;
 
-/**
- * Created by billyparrish on 10/28/17.
- */
 
 public class EpoxyModelRecyclerView extends RecyclerView {
-    private final RecyclerView.LayoutManager layoutManager;
     private SimpleEpoxyController controller;
 
     public EpoxyModelRecyclerView(Context context, @Nullable AttributeSet attrs, RecyclerView.LayoutManager layoutManager) {
         super(context, attrs);
-
-        this.layoutManager = layoutManager;
-        setLayoutManager(this.layoutManager);
+        setLayoutManager(layoutManager);
     }
 
-    public void setModels(List<? extends EpoxyModel<?>> models){
+    public void setModels(List<? extends EpoxyModel<?>> models) {
         if (controller == null) {
             controller = new SimpleEpoxyController();
             controller.setSpanCount(1);

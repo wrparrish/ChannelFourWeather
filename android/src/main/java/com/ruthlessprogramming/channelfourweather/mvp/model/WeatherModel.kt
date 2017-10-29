@@ -7,9 +7,6 @@ import com.ruthlessprogramming.domain.WeatherItem
 import redux.api.Reducer
 import redux.api.Store
 
-/**
- * Created by billyparrish on 10/28/17.
- */
 class WeatherModel : StoreModel<WeatherModel.State>() {
 
     override fun createStore(): Store<State> {

@@ -31,7 +31,8 @@ class DataModule {
     @Provides
     @Singleton
     fun provideHttpClient(): OkHttpClient {
-        val weatherClient = OkHttpClient.Builder()
+
+        return OkHttpClient.Builder()
                 .readTimeout(TIMEOUT_MS, TimeUnit.MILLISECONDS)
                 .writeTimeout(TIMEOUT_MS, TimeUnit.MILLISECONDS)
                 .addInterceptor(getCommonLogging())
@@ -48,21 +49,18 @@ class DataModule {
                             .build())
                 }
                 .build()
-
-        return weatherClient
     }
 
     @Provides
     @Singleton
     fun provideRetrofit(httpClient: OkHttpClient, gson: Gson): Retrofit {
-        val retrofit = Retrofit.Builder()
+
+        return Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .baseUrl(WEATHER_BASE_URL)
                 .client(httpClient)
                 .build()
-
-        return retrofit
     }
 
     @Singleton
@@ -73,11 +71,11 @@ class DataModule {
 
     @Singleton
     @Provides
-    fun providesWeatherNetworkDataSource(weatherService: WeatherService) :  WeatherNetworkDataSource {
+    fun providesWeatherNetworkDataSource(weatherService: WeatherService): WeatherNetworkDataSource {
         return WeatherRetrofitDataSource(weatherService)
     }
 
-    fun getCommonLogging(): HttpLoggingInterceptor {
+    private fun getCommonLogging(): HttpLoggingInterceptor {
         val logging = HttpLoggingInterceptor()
         val isLoggingEnabled = BuildConfig.DEBUG
         val logLevel = if (isLoggingEnabled)

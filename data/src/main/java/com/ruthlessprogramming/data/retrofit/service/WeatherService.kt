@@ -5,9 +5,6 @@ import io.reactivex.Observable
 import retrofit2.http.GET
 import retrofit2.http.Query
 
-/**
- * Created by billyparrish on 10/28/17.
- */
 interface WeatherService {
 
     @GET("forecast")

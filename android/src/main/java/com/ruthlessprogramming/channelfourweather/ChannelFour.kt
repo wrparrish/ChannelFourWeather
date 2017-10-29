@@ -7,11 +7,8 @@ import com.ruthlessprogramming.channelfourweather.common.di.component.DaggerChan
 import com.ruthlessprogramming.channelfourweather.common.di.module.AppModule
 import com.ruthlessprogramming.channelfourweather.common.di.module.DataModule
 
-/**
- * Created by billyparrish on 10/28/17.
- */
 class ChannelFour : Application() {
-    private var injector: Injector  = Injector.getInstance()
+    private var injector: Injector = Injector.getInstance()
 
     override fun onCreate() {
         super.onCreate()
@@ -19,12 +16,12 @@ class ChannelFour : Application() {
     }
 
     private fun initDagger() {
-        injector?.setComponent(createComponent())
-        injector?.inject(this)
+        injector.setComponent(createComponent())
+        injector.inject(this)
     }
 
     private fun createComponent(): ChannelFourComponent {
-        return  DaggerChannelFourComponent.builder()
+        return DaggerChannelFourComponent.builder()
                 .appModule(AppModule(this))
                 .dataModule(DataModule())
                 .build()

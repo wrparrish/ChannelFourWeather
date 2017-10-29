@@ -1,24 +1,9 @@
 package com.ruthlessprogramming.channelfourweather.extensions
 
-import android.graphics.drawable.Drawable
 import com.ruthlessprogramming.channelfourweather.R
-import com.ruthlessprogramming.domain.ListItem
-import com.ruthlessprogramming.domain.WeatherItem
 import java.text.SimpleDateFormat
 import java.util.*
 
-
-fun ListItem.getDateString(): String {
-
-    val sdf = java.text.SimpleDateFormat("MM/dd HH:mm", Locale.getDefault())
-
-    return sdf.format(this.dt?.times(1000))
-}
-
-
-fun WeatherItem.getIconUrl(): String {
-    return "http://openweathermap.org/img/w/$icon.png"
-}
 
 fun Long.buildDayString(): String {
     var dayAbrev = ""

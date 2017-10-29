@@ -1,7 +1,6 @@
 package com.ruthlessprogramming.channelfourweather.mvp.view.epoxy.models;
 
 import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.PagerSnapHelper;
 import android.support.v7.widget.RecyclerView;
 import android.view.ViewGroup;
 
@@ -27,8 +26,7 @@ public abstract class CarouselModel extends EpoxyModelWithView<EpoxyModelRecycle
     protected EpoxyModelRecyclerView buildView(ViewGroup parent) {
         RecyclerView.LayoutManager layoutManager =
                 new LinearLayoutManager(parent.getContext(), LinearLayoutManager.HORIZONTAL, false);
-        EpoxyModelRecyclerView recView = new EpoxyModelRecyclerView(parent.getContext(), null, layoutManager);
-        return recView;
+        return new EpoxyModelRecyclerView(parent.getContext(), null, layoutManager);
     }
 
     @Override

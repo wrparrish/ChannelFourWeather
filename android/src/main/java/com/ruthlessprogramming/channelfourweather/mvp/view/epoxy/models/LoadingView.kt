@@ -1,7 +1,6 @@
 package com.ruthlessprogramming.channelfourweather.mvp.view.epoxy.models
 
 import android.support.constraint.ConstraintLayout
-import android.widget.LinearLayout
 import android.widget.TextView
 import com.airbnb.epoxy.EpoxyAttribute
 import com.airbnb.epoxy.EpoxyModel

@@ -6,10 +6,7 @@ import com.ruthlessprogramming.domain.WeatherForDateRange
 import io.reactivex.Observable
 import javax.inject.Inject
 
-/**
- * Created by billyparrish on 10/28/17.
- */
-class WeatherRetrofitDataSource @Inject constructor(private val weatherService: WeatherService): WeatherNetworkDataSource {
+class WeatherRetrofitDataSource @Inject constructor(private val weatherService: WeatherService) : WeatherNetworkDataSource {
     override fun getAll(): Observable<List<WeatherForDateRange>> {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
