@@ -1,3 +1,20 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Channel Four Weather](#channel-four-weather)
+  - [Project Organization](#project-organization)
+    - [Android - Android Application Module](#android---android-application-module)
+      - [Redux](#redux)
+    - [Data - Android Library Module](#data---android-library-module)
+    - [Business Logic - Kotlin Module](#business-logic---kotlin-module)
+    - [Domain - Kotlin Module](#domain---kotlin-module)
+  - [Project Architecture](#project-architecture)
+  - [Tests](#tests)
+  - [Demo](#demo)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Channel Four Weather
 
 
