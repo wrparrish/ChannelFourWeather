@@ -42,6 +42,6 @@ Some simple tests covering the interactions with the "WeatherState" managed by r
 
 ## Demo
 
-![demo-video][channel_four_27.gif]
+![demo-video](channel_four_27.gif)
 
 
