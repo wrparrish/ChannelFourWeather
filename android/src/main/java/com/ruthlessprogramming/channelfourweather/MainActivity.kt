@@ -15,12 +15,12 @@ class MainActivity : MvpActivity<WeatherView, WeatherPresenter>(), WeatherView {
     private lateinit var controller: WeatherEpoxyController
     private lateinit var recyclerView: RecyclerView
 
-    lateinit  @Inject
+    lateinit @Inject
     var weatherPresenter: WeatherPresenter
 
 
     override fun createPresenter(): WeatherPresenter {
-      return weatherPresenter
+        return weatherPresenter
     }
 
     override fun renderState(state: WeatherModel.State) {

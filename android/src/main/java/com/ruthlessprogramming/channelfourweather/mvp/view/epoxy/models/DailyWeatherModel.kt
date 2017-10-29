@@ -1,12 +1,13 @@
 package com.ruthlessprogramming.channelfourweather.mvp.view.epoxy.models
 
-import android.support.constraint.ConstraintLayout
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
-import com.airbnb.epoxy.*
+import com.airbnb.epoxy.EpoxyAttribute
+import com.airbnb.epoxy.EpoxyHolder
+import com.airbnb.epoxy.EpoxyModelClass
+import com.airbnb.epoxy.EpoxyModelWithHolder
 import com.ruthlessprogramming.channelfourweather.R
-import com.squareup.picasso.Picasso
 
 @EpoxyModelClass
 abstract class DailyWeatherModel : EpoxyModelWithHolder<DailyWeatherModel.Holder>() {

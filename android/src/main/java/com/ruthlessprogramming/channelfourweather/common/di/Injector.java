@@ -6,10 +6,6 @@ import com.ruthlessprogramming.channelfourweather.common.di.component.ChannelFou
 
 import org.jetbrains.annotations.NotNull;
 
-/**
- * Created by billyparrish on 10/28/17.
- */
-
 public class Injector {
     private static final Injector ourInstance = new Injector();
     private ChannelFourComponent component;

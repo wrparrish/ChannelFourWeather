@@ -46,7 +46,7 @@ class WeatherEpoxyController : TypedEpoxyController<WeatherModel.State>() {
                         .summaryString(it.weather?.first()?.description ?: "")
                         .dayString(it.dt?.buildDayString() ?: "")
                         .iconDrawable(it.weather?.first()?.description?.parseForecastIcon() ?: 0)
-                        .tempString("${it.main?.temp?.toInt()}" )
+                        .tempString("${it.main?.temp?.toInt()}")
             }
         }
 

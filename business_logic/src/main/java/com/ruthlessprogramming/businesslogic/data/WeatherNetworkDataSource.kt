@@ -3,9 +3,6 @@ package com.ruthlessprogramming.businesslogic.data
 import com.ruthlessprogramming.domain.WeatherForDateRange
 import io.reactivex.Observable
 
-/**
- * Created by billyparrish on 10/28/17.
- */
 interface WeatherNetworkDataSource : WeatherDataSource {
 
     override fun getAll(): Observable<List<WeatherForDateRange>>
